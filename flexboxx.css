@@ -1,0 +1,51 @@
+html,body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+.flex-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    flex-direction: row;
+
+}
+.test{
+	width: 150px;
+    border:1px;
+    border-style:solid;
+}
+#a{
+	height: 120px;
+	padding: 20px;
+	border-color:  red;
+}
+#b{
+    height: 100px;
+    border-color: red;
+}
+#c{
+    height: 40px;
+    border-color: red;
+}
+#d{
+    height: 200px;
+    border-color: blue;
+
+}
+@media screen and (max-width:640px)  {
+    #a{
+        order: 2;
+    }
+    #b{
+        order: 3;
+    }
+     #c{
+        order: 4;
+    }
+     #d{
+        order: 1;
+    }
+}
